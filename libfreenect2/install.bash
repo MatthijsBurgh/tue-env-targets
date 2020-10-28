@@ -40,7 +40,7 @@ then
         mkdir "$build_folder"
     fi
     cd "$build_folder"
-    cmake .. -DCMAKE_INSTALL_PREFIX="$dest"
+    cmake .. -DCMAKE_INSTALL_PREFIX="$HOME"/freenect2
     make
     sudo make install
 else
