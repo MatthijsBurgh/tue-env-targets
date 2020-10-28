@@ -1,0 +1,13 @@
+- type: target
+  name: build-essential
+- type: target
+  name: cmake
+- type: target
+  name: pkg-config
+
+- type: target
+  name: libusb-1.0-dev
+- type: target
+  name: libturbojpeg
+- type: target
+  name: libglfw3-dev
