@@ -6,6 +6,9 @@ dest="$HOME/src/libfreenect2"
 # by default, set the previous commit to -1, which will trigger a 'make'
 prev="-1"
 
+# shellcheck disable=SC2164
+pushd . > /dev/null
+
 if [[ -d "$dest" ]]
 then
     # shellcheck disable=SC2164
@@ -40,7 +43,7 @@ then
         mkdir "$build_folder"
     fi
     cd "$build_folder"
-    cmake .. -DCMAKE_INSTALL_PREFIX="$HOME"/freenect2
+    cmake ..
     make
     sudo make install
 else
@@ -52,3 +55,6 @@ then
     tue-install-debug "Coping udev rules"
     sudo ln -s "$dest"/platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 fi
+
+# shellcheck disable=SC2164
+popd > /dev/null
