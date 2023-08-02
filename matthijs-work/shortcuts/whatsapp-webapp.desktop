@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=WhatsApp
+GenericName=WhatsApp
+Comment=WhatsApp desktop webapp
+Exec=bash -c "wmctrl -xa web.whatsapp.com || /opt/google/chrome-unstable/google-chrome --app=https://web.whatsapp.com/"
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+Icon=whatsapp
+Categories=Network;Application;
+Keywords=WhatsApp;webapp;
+X-Ubuntu-Gettext-Domain=WhatsApp
+StartupWMClass=web.whatsapp.com

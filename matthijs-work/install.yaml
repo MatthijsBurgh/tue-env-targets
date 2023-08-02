@@ -1,0 +1,55 @@
+# robot-demo-user
+- type: target
+  name: ccache
+- type: target
+  name: gitsu
+- type: target
+  name: networking
+- type: target
+  name: vim
+- type: system
+  name: htop
+
+# Handy shit
+- type: target
+  name: chrome-dev
+- type: target
+  name: qtcreator
+- type: target
+  name: pycharm-professional
+- type: target
+  name: terminator
+- type: target
+  name: vim
+
+- type: system
+  name: geany
+- type: system
+  name: gedit
+- type: system
+  name: gthumb
+- type: system
+  name: silversearcher-ag
+- type: system
+  name: tree
+- type: system
+  name: redshift-gtk
+- type: system
+  name: shellcheck
+- type: system
+  name: yamllint
+
+- type: target
+  name: spotify
+- type: target
+  name: telegram-desktop
+- type: snap
+  name: vlc
+
+# Styling
+- type: system
+  name: gnome-tweaks
+- type: system
+  name: numix-gtk-theme
+- type: system
+  name: numix-icon-theme

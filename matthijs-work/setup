@@ -1,0 +1,68 @@
+#! /usr/bin/env bash
+
+if [[ $- == *i* ]]
+then
+    bind '"\e[A": history-search-backward'
+    bind '"\e[B": history-search-forward'
+    bind '"\e[C": forward-char'
+    bind '"\e[D": backward-char'
+fi
+
+function sb
+{
+    # shellcheck disable=SC1090
+    source ~/.bashrc
+}
+
+alias ag='ag -fi'
+
+alias ccat='pygmentize -g -O style=colorful'
+
+# robot-demo-user
+function _any-core
+{
+    export ROS_MASTER_URI="http://$1:11311"
+}
+
+function _robot-core
+{
+    _any-core "$1.local"
+}
+
+alias local-core='_any-core localhost'
+
+# Next line is not in robot-demo-user
+local-core
+
+####################
+#
+# git prompt
+#
+####################
+
+# source ~/Documents/tools/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+# Explicitly unset color (default anyhow). Use 1 to set it.
+GIT_PS1_SHOWCOLORHINTS=1
+GIT_PS1_DESCRIBE_STYLE="branch"
+GIT_PS1_SHOWUPSTREAM="auto git"
+
+# PROMPT_COMMAND='__git_ps1 "[\[\033[01;34m\]\w\[\033[00m\]]" "\n'\
+# '${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\$ "'
+
+
+function ROS_MASTER_NAME {
+    # shellcheck disable=SC2001
+    ROS_MASTER=$(echo "$ROS_MASTER_URI" | sed 's#http://\(.*\):.*#\1#')
+    if [ "$ROS_MASTER" == "localhost" ] || [ "$ROBOT_REAL" == "true" ]; then
+        echo ""
+    else
+        echo "($ROS_MASTER-core) "
+    fi
+}
+
+# shellcheck disable=SC2154,SC2026
+PS1='[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1)\n'\
+'$(ROS_MASTER_NAME)${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \$ '
