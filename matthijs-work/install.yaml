@@ -18,6 +18,8 @@
 - type: target
   name: pycharm-professional
 - type: target
+  name: slack
+- type: target
   name: terminator
 - type: target
   name: vim
