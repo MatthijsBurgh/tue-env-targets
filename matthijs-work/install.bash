@@ -15,6 +15,8 @@ if [ "$(lsb_release -sc)" != "xenial" ]
 then
     tue-install-debug "gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'"
     gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
+    gsettings set org.gnome.shell.extensions.ding show-trash true
+    gsettings set org.gnome.shell.extensions.ding show-home false
 fi
 
 # Styling
