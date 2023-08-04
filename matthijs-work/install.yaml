@@ -39,6 +39,8 @@
 - type: system
   name: shellcheck
 - type: system
+  name: solaar
+- type: system
   name: yamllint
 
 - type: target
