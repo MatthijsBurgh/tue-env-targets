@@ -14,6 +14,8 @@
 - type: target
   name: chrome-dev
 - type: target
+  name: ipython
+- type: target
   name: qtcreator
 - type: target
   name: pycharm-professional
