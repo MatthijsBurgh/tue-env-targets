@@ -52,6 +52,9 @@
 - type: snap
   name: vlc
 
+- type: snap
+  name: notion-snap-reborn
+
 # Styling
 - type: system
   name: gnome-tweaks
