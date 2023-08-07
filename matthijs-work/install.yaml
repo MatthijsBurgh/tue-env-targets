@@ -33,6 +33,8 @@
 - type: system
   name: gthumb
 - type: system
+  name: meld
+- type: system
   name: silversearcher-ag
 - type: system
   name: tree
