@@ -66,3 +66,6 @@ function ROS_MASTER_NAME {
 # shellcheck disable=SC2154,SC2026
 PS1='[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1)\n'\
 '$(ROS_MASTER_NAME)${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \$ '
+
+# tue-common
+alias trunk='cd $TUE_ENV_DIR/system/src'
