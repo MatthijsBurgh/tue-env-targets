@@ -1,3 +1,0 @@
-[submodule "hsr-setup"]
-    path = hsr-setup
-    url = git@github.com:tue-robotics/hsr-setup.git
