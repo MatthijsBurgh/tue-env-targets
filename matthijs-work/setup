@@ -8,6 +8,11 @@ then
     bind '"\e[D": backward-char'
 fi
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 function sb
 {
     # shellcheck disable=SC1090
