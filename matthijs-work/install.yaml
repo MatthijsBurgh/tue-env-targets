@@ -48,6 +48,8 @@
   name: yamllint
 
 - type: target
+  name: p7zip-full
+- type: target
   name: spotify
 - type: target
   name: telegram-desktop
