@@ -27,6 +27,8 @@
   name: vim
 
 - type: system
+  name: btop
+- type: system
   name: geany
 - type: system
   name: gedit
