@@ -1,0 +1,4 @@
+- type: ros
+  source:
+    type: git
+    url: https://gitlab.com/vbti-products/projects/vdl/part-inspection/ros/vdl_part_inspection.git
