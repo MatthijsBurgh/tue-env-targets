@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+
+TUE_OMNIVERSE_DIR=$HOME/.local/share/ov/
+export TUE_OMNIVERSE_DIR
+
+mapfile -t find_results < <(find "${TUE_OMNIVERSE_DIR}"/pkg -maxdepth 1 -type d -name "isaac*" | sort -nr)
+rc=$?
+if [[ $rc -ne 0 ]]
+then
+    echo -e "\033[33;1m[nvidia-isaac-sim] Error while trying to find Isaac SIM folder inside of '${TUE_OMNIVERSE_DIR}/pkg'\033[0m"
+elif [[ ${#find_results[@]} -lt 1 ]]
+then
+    echo -e "\033[33;1m[nvidia-isaac-sim] No Isaac SIM folder found inside of '${TUE_OMNIVERSE_DIR}/pkg'\033[0m"
+else
+    TUE_ISAAC_SIM_DIR=${find_results[0]}
+    export TUE_ISAAC_SIM_DIR
+fi
+
+
+
