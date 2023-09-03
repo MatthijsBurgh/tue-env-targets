@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: https://gitlab.com/vbti-products/projects/vdl/part-inspection/ros/vbti_common.git
+    sub-dir: vbti_tools
