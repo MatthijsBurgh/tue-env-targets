@@ -1,0 +1,5 @@
+- type: ros
+  source:
+    type: git
+    url: https://github.com/MatthijsBurgh/tmr_ros2.git
+    sub-dir: tm_description
