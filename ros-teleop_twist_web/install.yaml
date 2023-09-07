@@ -1,4 +1,0 @@
-- type: ros
-  source:
-    type: git
-    url: https://github.com/tue-robotics/teleop_twist_web.git

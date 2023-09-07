@@ -1,5 +1,0 @@
-- type: ros
-  source:
-    type: git
-    url: https://github.com/tue-robotics/topological_action_planner.git
-    sub-dir: topological_action_planner

@@ -1,5 +1,0 @@
-- type: target
-  name: tue-middleware
-
-- type: target
-  name: ros-ed_tmc_collision

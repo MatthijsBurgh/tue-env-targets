@@ -1,5 +1,0 @@
-- type: ros
-  source:
-    type: git
-    url: git@github.com:tue-robotics/hsrb_moveit.git
-    sub-dir: hsrb_moveit

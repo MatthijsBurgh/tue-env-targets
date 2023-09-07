@@ -1,4 +1,0 @@
-#! /usr/bin/env bash
-
-# Alias to reset audio
-alias reset-audio='alsactl --file "$(dirname "${BASH_SOURCE[0]}")"/alsamixer.conf restore'

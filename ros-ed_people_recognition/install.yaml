@@ -1,5 +1,0 @@
-- type: ros
-  source:
-    type: git
-    url: https://github.com/tue-robotics/ed_people_recognition.git
-    sub-dir: ed_people_recognition

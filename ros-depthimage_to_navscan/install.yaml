@@ -1,5 +1,0 @@
-- type: ros
-  source:
-    type: git
-    url: https://github.com/tue-robotics/depthimage_to_navscan.git
-    sub-dir: depthimage_to_navscan

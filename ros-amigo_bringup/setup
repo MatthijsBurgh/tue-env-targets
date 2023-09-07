@@ -1,3 +1,0 @@
-#! /usr/bin/env bash
-
-export ROBOT_PARAMETER_PATH=$TUE_ENV_DIR/system/src/amigo_bringup/parameters

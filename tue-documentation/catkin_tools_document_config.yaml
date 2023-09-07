@@ -1,4 +1,0 @@
-html_theme: sphinx_rtd_theme
-project: tue-robotics
-copyright: Tech United Eindhoven
-html_logo: ../../../.env/targets/tue-documentation/techunited.png
